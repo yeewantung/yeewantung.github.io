@@ -6,8 +6,14 @@
   <body>
     
 <script type="text/javascript">
-     window.onload = function() { document.getElementById("hideAll").style.display = "none"; }
+     window.onload = function() {
+       document.getElementById("hideAll").style.display = "none";
+       document.getElementById("tempDiv").style.display = "block";
+     }
 </script>
+<div id="tempDiv">
+  Hello World
+</div>
 <div id="hideAll" style="position: fixed;
    left: 0px; 
    right: 0px; 
