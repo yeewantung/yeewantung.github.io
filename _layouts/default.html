@@ -6,9 +6,26 @@
   <body>
     
 <script type="text/javascript">
-     window.onload = function() {
-       document.getElementById("hideAll").style.visibility = "visible";
-       document.getElementById("tempDiv").style.visibility = "hidden";
+    window.onload = function() {
+        var n1 = 0;
+        var n2 = 100;
+        var h1 = setInterval(function(){ 
+            if(n1 < 100){ 
+                n1+=10; 
+                document.getElementById("hideAll").style.opacity = n1/100.;
+            }else{ 
+                clearTimeout(h1); 
+            } 
+        },50);
+        var h2 = setInterval(function(){
+            if(n2 > 0){
+                n2-=10;
+                document.getElementById("tempDiv").style.opacity = n2/100.;
+            }else{
+                clearTimeout(h2);
+                document.getElementById("tempDiv").style.display = "none";
+            }
+        },50);
      }
 </script>
 <div id="tempDiv" style="position: fixed;
@@ -16,7 +33,7 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);">
-    <embed src="/Aleph0.svg" width="100%" 
+    <embed src="/Aleph0.svg" width="100%"
         type="image/svg+xml"
         pluginspage="http://www.adobe.com/svg/viewer/install/" />
 </div>
@@ -27,7 +44,7 @@
     bottom: 0px; 
     background-color: white;
     z-index: 99;
-    visibility: hidden;">
+    opacity: 0;">
 
     {% include header.html %}
 
