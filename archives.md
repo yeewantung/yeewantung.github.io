@@ -1,12 +1,8 @@
 ---
 title: "Blog Archive"
 permalink: /archive/
-layout: default
+layout: page
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Blog Archive</h1>
 
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
 
@@ -33,4 +29,3 @@ layout: default
       classname="category-default"
   for(var e of document.getElementsByClassName(classname))e.style.display=""
   </script>
-</div>

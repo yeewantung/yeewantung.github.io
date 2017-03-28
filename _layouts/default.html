@@ -5,7 +5,7 @@
 
   <body>
 
-<div id="tempDiv" style="position: fixed;
+<div id="tempCover-cover" style="position: fixed;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -17,8 +17,8 @@
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/Aleph0.svg');
     xhr.onload = function(){
-        document.getElementById("tempDiv").innerHTML = xhr.responseText;
-        document.getElementById("tempDiv").firstElementChild.style.transform = "scale(0.5, 0.5)";
+        document.getElementById("tempCover-cover").innerHTML = xhr.responseText;
+        document.getElementById("tempCover-cover").firstElementChild.style.transform = "scale(0.5, 0.5)";
     }
     xhr.send()
 
@@ -28,7 +28,7 @@
         var h1 = setInterval(function(){ 
             if(n1 < 100){ 
                 n1+=10; 
-                document.getElementById("hideAll").style.opacity = n1/100.;
+                document.getElementById("tempCover-content").style.opacity = n1/100.;
             }else{ 
                 clearTimeout(h1); 
             } 
@@ -36,15 +36,15 @@
         var h2 = setInterval(function(){
             if(n2 > 0){
                 n2-=10;
-                document.getElementById("tempDiv").style.opacity = n2/100.;
+                document.getElementById("tempCover-cover").style.opacity = n2/100.;
             }else{
                 clearTimeout(h2);
-                document.getElementById("tempDiv").style.display = "none";
+                document.getElementById("tempCover-cover").style.display = "none";
             }
         },50);
      }
 </script>
-<div id="hideAll" style="position: static;
+<div id="tempCover-content" style="position: static;
     left: 0px; 
     right: 0px; 
     top: 0px; 
