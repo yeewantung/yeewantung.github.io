@@ -4,8 +4,24 @@
   {% include head.html %}
 
   <body>
-    
+
+<div id="tempDiv" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);">
+    <div id="svgCover" style="width:100%;"></div>
+</div>
+
+   
 <script type="text/javascript">
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/Aleph0.svg');
+    xhr.onload = function(){
+        document.getElementById("svgCover").innerHTML = xhr.responseText;
+    }
+    xhr.send()
+
     window.onload = function() {
         var n1 = 0;
         var n2 = 100;
@@ -33,7 +49,6 @@
     right: 0px; 
     top: 0px; 
     bottom: 0px; 
-    background-color: white;
     z-index: 99;
     opacity: 0;">
 
@@ -48,16 +63,7 @@
     {% include footer.html %}
 
 </div>
-<div id="tempDiv" style="position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);">
-    <embed src="/Aleph0.svg" style="width:100%;"
-        type="image/svg+xml"
-        pluginspage="http://www.adobe.com/svg/viewer/install/" />
-</div>
 
-  </body>
+</body>
 
 </html>
