@@ -7,21 +7,23 @@
     
 <script type="text/javascript">
      window.onload = function() {
-       document.getElementById("hideAll").style.display = "block";
-       document.getElementById("tempDiv").style.display = "none";
+       document.getElementById("hideAll").style.display = "visible";
+       document.getElementById("tempDiv").style.display = "hidden";
      }
 </script>
-<div id="tempDiv">
-  Hello World
+<div id="tempDiv" style="position:static;
+                         top: 50%;
+                         left: 50%;">
+  ℵ₀
 </div>
 <div id="hideAll" style="position: fixed;
-   left: 0px; 
-   right: 0px; 
-   top: 0px; 
-   bottom: 0px; 
-   background-color: white;
-   z-index: 99;
-   display: none;">
+                         left: 0px; 
+                         right: 0px; 
+                         top: 0px; 
+                         bottom: 0px; 
+                         background-color: white;
+                         z-index: 99;
+                         display: hidden;">
   
     {% include header.html %}
 
