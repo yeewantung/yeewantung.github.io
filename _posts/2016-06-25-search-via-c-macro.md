@@ -2,7 +2,7 @@
 layout: post
 title: c宏来实现穷举
 author: "Hao Zhang"
-categories: test
+categories: code
 ---
 
 问题：[编写一个在1，2，…，9（顺序不能变）数字之间插入+或-或什么都不插入，使得计算结果总是 100 的程序，并输出所有的可能性。例如：1 + 2 + 34 – 5 + 67 – 8 + 9 = 100。][question]
