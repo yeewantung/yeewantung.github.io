@@ -8,7 +8,6 @@ baseurl: ""
 url: "https://hzhangxyz.github.io"
 
 markdown: kramdown
-theme: jekyll-theme-slate
 gems:
   - jekyll-feed
 exclude:
