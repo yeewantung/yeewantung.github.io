@@ -14,4 +14,4 @@ title: Repositories
 - [WellDone][welldone]
 
 [ongoing]: https://github.com/hzhangxyz?tab=repositories&q=ongoing
-[welldone]: https://github.com/hzhangxyz?tab=repositories&q=ongoing
+[welldone]: https://github.com/hzhangxyz?tab=repositories&q=welldone
