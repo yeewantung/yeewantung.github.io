@@ -1,5 +1,5 @@
-main:
-  - title: "A program converting Chinese numerals to Arabic numberals"
+page:
+  - title: "Converting Chinese numerals to Arabic numberals"
     url: "/CH2AN/"
   - title: "The result of DLA"
     url: "/DLA/"
