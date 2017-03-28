@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Hao Zhang's Home
 author: Hao Zhang
+email: me@hzhang.xyz
 description: >
     Hello, I am Hao Zhang, an undergraduate student from USTC, majoring in CMP.
 baseurl: "" # the subpath of your site, e.g. /blog
