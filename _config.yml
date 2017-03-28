@@ -18,8 +18,8 @@ author: Hao Zhang
 email: me@hzhang.xyz
 description: >
     Hello, I am Hao Zhang, an undergraduate student from USTC, majoring in CMP.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://hzhangxyz.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://hzhangxyz.github.io"
 lang: en
 timezone: GMT+8
 exclude:
@@ -50,11 +50,3 @@ kramdown:
   footnote_nr: 1
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   toc_levels: 1..6
-
-# jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: category_archives
-  permalinks:
-    category: /categories/:name/
