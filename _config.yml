@@ -30,7 +30,6 @@ exclude:
 
 # Plugins
 gems:
-  - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
 
