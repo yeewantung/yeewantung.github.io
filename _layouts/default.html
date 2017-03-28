@@ -4,7 +4,19 @@
   {% include head.html %}
 
   <body>
-
+    
+<script type="text/javascript">
+     window.onload = function() { document.getElementById("hideAll").style.display = "none"; }
+</script>
+<div id="hideAll" style="position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 99;
+   display: block;">
+  
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
@@ -14,6 +26,8 @@
     </main>
 
     {% include footer.html %}
+
+</div>
 
   </body>
 
