@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Repos
-permalink: /repos/
 ---
 
 - [A program converting Chinese numerals to Arabic numberals](https://hzhangxyz.github.io/CH2AN/)
