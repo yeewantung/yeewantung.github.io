@@ -25,19 +25,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
-  - README.md
-  - LICENSE.txt
-  - CHANGELOG.md
   - jekyll-whiteglass.gemspec
-  - screenshot.png
-  - vendor
-
-# Social media
-twitter_username:
-twitter_image:
-facebook_app_id:
-facebook_image:
-google_analytics:
 
 # Plugins
 gems:
