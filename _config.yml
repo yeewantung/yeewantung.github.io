@@ -1,0 +1,14 @@
+title: Hao Zhang's Home
+email: me@hzhang.xyz
+description: >
+    Hello,  I am Hao Zhang, an undergraduate student from University of Science and Technology of China, majoring in Condensed Matter Physics.
+github_username:  hzhangxyz
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
