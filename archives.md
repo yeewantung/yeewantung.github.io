@@ -21,11 +21,13 @@ layout: page
     {% endfor %}
   </ul>
   <script>
-  var q=window.location.search
-  var classname
+  var q=window.location.search;
+  var classname;
   if(q)
-      classname="category-"+q.substring(1)
+      classname="category-"+q.substring(1);
   else
-      classname="category-default"
-  for(var e of document.getElementsByClassName(classname))e.style.display=""
+      classname="category-default";
+  var es = document.getElementsByClassName(classname);
+  for(var e=0; e<es.length; e++)
+    es[e].style.display="";
   </script>
