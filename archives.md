@@ -23,9 +23,10 @@ layout: page
   <script>
   var q=window.location.search;
   var classname;
-  if(q)
-      classname="category-"+q.substring(1);
-  else
+  if(q){
+      classname="category-"+q.substring(10);
+      document.getElementsByClassName("post-title")[0].innerHTML += " : "+classname.substring(9);
+  }else
       classname="category-default";
   var es = document.getElementsByClassName(classname);
   for(var e=0; e<es.length; e++)
