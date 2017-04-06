@@ -1,13 +1,13 @@
 ---
 layout: post
-title: c宏来实现穷举
+title: An Interesting Search with c macro
 author: "Hao Zhang"
 categories: code
 ---
 
-问题：[编写一个在1，2，…，9（顺序不能变）数字之间插入+或-或什么都不插入，使得计算结果总是 100 的程序，并输出所有的可能性。例如：1 + 2 + 34 – 5 + 67 – 8 + 9 = 100。][question]
+question：[insert "+" or "-" into "123456789" and ensure the result is 100, output all the situations.][question]
 
-代码：
+code：
 {% highlight c %}
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,7 +24,7 @@ categories: code
 
 int main(int argc,char ** argv){
   int num;
-  if(argc==1) num = 0;
+  if(argc==1) num = 100;
   else        num = atoi(argv[1]);
   C2(1);
   C2(-1);
@@ -32,7 +32,7 @@ int main(int argc,char ** argv){
 }
 {% endhighlight %}
 
-结果：
+output：
 
 {% highlight plain %}
 123+45-67+8-9 = 100
@@ -49,6 +49,6 @@ int main(int argc,char ** argv){
 -1+2-3+4+5+6+78+9 = 100
 {% endhighlight %}
 
-感觉挺有趣，所以发一下
+it uses macro to expand all the situation, which is a little interesting so I post it here.
 
 [question]: http://www.linuxeden.com/html/develop/20150907/162726.html
