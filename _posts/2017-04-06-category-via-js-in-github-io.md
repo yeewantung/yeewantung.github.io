@@ -14,3 +14,9 @@ and the webpage is [here](https://hzhangxyz.github.io/archive/)
 Just set style.display for every post in the contents
 
 But maybe it would be slow if the contents is too large.
+
+BTW, is there any pure static blog framework which only use js?
+
+unlike jekyll use ruby to refresh static page
+
+maybe ajax is better?
