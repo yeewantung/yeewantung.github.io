@@ -5,7 +5,7 @@ author: "Hao Zhang"
 categories: code
 ---
 
-Since githubio does not support "jekyll-archives", I just emplement it with js although it is very easy it seems.
+Since githubio does not support "jekyll-archives", I just implemented it with js although it is very easy it seems.
 
 the code is [here](https://raw.githubusercontent.com/hzhangxyz/hzhangxyz.github.io/master/archives.md)
 
