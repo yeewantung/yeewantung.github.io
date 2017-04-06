@@ -10,3 +10,7 @@ Since githubio does not support "jekyll-archives", I just implemented it with js
 the code is [here](https://raw.githubusercontent.com/hzhangxyz/hzhangxyz.github.io/master/archives.md)
 
 and the webpage is [here](https://hzhangxyz.github.io/archive/)
+
+Just set style.display for every post in the contents
+
+But maybe it would be slow if the contents is too large.
