@@ -5,53 +5,6 @@
 
   <body>
 
-<div id="tempCover-cover" style="position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);">
-</div>
-
-   
-<script type="text/javascript">
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/Aleph0.svg');
-    xhr.onload = function(){
-        document.getElementById("tempCover-cover").innerHTML = xhr.responseText;
-        document.getElementById("tempCover-cover").firstElementChild.style.transform = "scale(0.5, 0.5)";
-    }
-    xhr.send()
-
-    window.onload = function() {
-        var n1 = 0;
-        var n2 = 100;
-        var h1 = setInterval(function(){ 
-            if(n1 < 100){ 
-                n1+=10; 
-                document.getElementById("tempCover-content").style.opacity = n1/100.;
-            }else{ 
-                clearTimeout(h1); 
-            } 
-        },50);
-        var h2 = setInterval(function(){
-            if(n2 > 0){
-                n2-=10;
-                document.getElementById("tempCover-cover").style.opacity = n2/100.;
-            }else{
-                clearTimeout(h2);
-                document.getElementById("tempCover-cover").style.display = "none";
-            }
-        },50);
-     }
-</script>
-<div id="tempCover-content" style="position: static;
-    left: 0px; 
-    right: 0px; 
-    top: 0px; 
-    bottom: 0px; 
-    z-index: 99;
-    opacity: 0;">
-
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
@@ -62,8 +15,6 @@
 
     {% include footer.html %}
 
-</div>
-
-</body>
+  </body>
 
 </html>
