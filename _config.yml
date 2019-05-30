@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.author }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Yiyun Dong's Home
-author: Yiyun Dong
+title: Yee-Wan Tung's Home
+author: Yee-Wan Tung
 email: dyyakiko@gmail.com
 description: >
     Hello world! 
